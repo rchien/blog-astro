@@ -1,17 +1,15 @@
 ---
-title: Javascript for C# Developer
+title: Javascript for CSharp Developer
 author: Richard Chien
 pubDatetime: 2016-02-16
 postSlug: javascript-for-experienced-csharp-dev
 featured: false
 draft: false
 tags:
-    - c#
-    - javascript
-description:
-  "Javascript for experienced C# Developer"
+  - c#
+  - javascript
+description: "Javascript for experienced C# Developer"
 ---
-
 
 # Prelude
 
@@ -37,7 +35,7 @@ Key concepts overview Js is duck typed (but typed nonetheless), JIT compiled lan
 
 ### Before we get started
 
-Best REPL Open browser tab, type about:blank in address bar, open F12 and start typing. To type multiple line into the console at once, use  `<shift> + <enter>`.
+Best REPL Open browser tab, type about:blank in address bar, open F12 and start typing. To type multiple line into the console at once, use `<shift> + <enter>`.
 
 Search [YDKJS Github repo](https://github.com/getify/You-Dont-Know-JS) to learn or re-learn concepts. THE best free JS resource online AFAIK. For full-featured REPL, use online IDE like [jsfiddle](http://jsfiddle.net/), [CodePen](http://codepen.io/)
 
@@ -47,18 +45,18 @@ When you declare a variable, it’s available anywhere in that scope, as well as
 
 ```jsx
 IIFE (Immediately Invoked Function Expressions)
-(function iife() { 
-  Console.log(”hi”); 
+(function iife() {
+  Console.log(”hi”);
 })();
 ```
 
-Use IIFE to create scope and isolate variables without impacting its surroundings 
+Use IIFE to create scope and isolate variables without impacting its surroundings
 
 ```jsx
 Var a = 123
 
-(function iife() { 
-  Var a = 321; 
+(function iife() {
+  Var a = 321;
 })();
 
 Console.log(a); //123
