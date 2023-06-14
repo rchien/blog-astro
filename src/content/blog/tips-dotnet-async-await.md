@@ -1,5 +1,5 @@
 ---
-title: Tips on DotNet async/await
+title: Tips on DotNet async await
 author: Richard Chien
 pubDatetime: 2016-01-31
 postSlug: tips-on-dotnet-async-wait

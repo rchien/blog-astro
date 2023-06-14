@@ -1,19 +1,19 @@
 ---
-title: Intro to Google Dataflow (hosted Beam)
+title: Intro to Google Dataflow (Hosted Apache Beam)
 author: Richard Chien
 pubDatetime: 2022-02-06
 postSlug: intro-dataflow-gcp
 featured: false
 draft: false
 tags:
-    - data
-    - dataflow
-    - gcp
-description:
-  "Introduction to Dataflow architecture and features (with videos)"
+  - data
+  - dataflow
+  - gcp
+description: "Introduction to Dataflow architecture and features (with videos)"
 ---
 
 ---
+
 author: Sat Naing
 pubDatetime: 2022-09-23T15:22:00Z
 title: Adding new posts in AstroPaper theme
@@ -21,13 +21,14 @@ postSlug: adding-new-posts-in-astropaper-theme
 featured: true
 draft: false
 tags:
-  - docs
-ogImage: ""
-description:
+
+- docs
+  ogImage: ""
+  description:
   Some rules & recommendations for creating or adding new posts using AstroPaper
   theme.
----
 
+---
 
 <aside>
 ✨ I hosted a study group on intro to Google’s Dataflow Architecture using miro (which, BTW is a great way to spice up presentation with doses of interactivity). Below are key points taken from slides with talking points and links. Hope this helps people who are starting on their Google Dataflow journey 🙂
@@ -44,17 +45,17 @@ Google’s Dataflow is a runner for Apache Beam. Apache beam is a unified and po
 - Born from Google technologies. Active involvement from Google engineers
 
 - Dataflow specific features
-    - Shuffle Service, Streaming Engine
-    - FlexRS
-    - GPU Support
-    - IAM, Monitoring, Logging built-in
+  - Shuffle Service, Streaming Engine
+  - FlexRS
+  - GPU Support
+  - IAM, Monitoring, Logging built-in
 - Optimizations
-    - Graph optimization
-        - Fusion, combine
-    - Auto scaling and sharding
-        - [GroupIntoBatches](https://www.youtube.com/watch?v=jses0W4Zalc&list=PL4dEBWmGSIU8vLWF56shrSuTsLXvO6Ex3)
+  - Graph optimization
+    - Fusion, combine
+  - Auto scaling and sharding
+    - [GroupIntoBatches](https://www.youtube.com/watch?v=jses0W4Zalc&list=PL4dEBWmGSIU8vLWF56shrSuTsLXvO6Ex3)
 - New features
-    - Prime - VPA (similar to k8 VPA), better monitoring and scaling
+  - Prime - VPA (similar to k8 VPA), better monitoring and scaling
 
 # Overall Architecture
 
@@ -81,16 +82,16 @@ To summarize, below are the diffrent stages of manifest
 
 1. Code
 2. Graph (graph construction time)
-    1. Traverse from main entry point to generate nodes of graph
-    2. Executes locally on the machine that runs the pipeline (2b differs depending on use of classic vs flex template)
-    3. Validates all resources (GCS, PubSub, etc)
-    4. Check other errors
+   1. Traverse from main entry point to generate nodes of graph
+   2. Executes locally on the machine that runs the pipeline (2b differs depending on use of classic vs flex template)
+   3. Validates all resources (GCS, PubSub, etc)
+   4. Check other errors
 3. Job (job creation time)
-    1. Translated to JSON format and sent it to Dataflow service endpoint
-    2. Validates JSON and replies with jobId
-    3. Becomes a job on the Dataflow Service
+   1. Translated to JSON format and sent it to Dataflow service endpoint
+   2. Validates JSON and replies with jobId
+   3. Becomes a job on the Dataflow Service
 4. Job Execution Time
-    1. The Dataflow service starts provisioning worker VMs. Serialized processing functions from the execution graph and required libraries are downloaded to the worker VMs and the Dataflow service starts distributing the data bundles to be processed on these VMs.
+   1. The Dataflow service starts provisioning worker VMs. Serialized processing functions from the execution graph and required libraries are downloaded to the worker VMs and the Dataflow service starts distributing the data bundles to be processed on these VMs.
 
 ## Sample execution graph (WordCount)
 
