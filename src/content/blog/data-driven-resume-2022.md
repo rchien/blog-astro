@@ -6,12 +6,10 @@ postSlug: dd-resume-2022
 featured: false
 draft: false
 tags:
-    - resume
-    - data-driven
-    - tech
-    - tech
-description:
-  "Data-Driven Resume in 2022"
+  - resume
+  - data-driven
+  - tech
+description: "Data-Driven Resume in 2022"
 ---
 
 # Data-drive resume in 2022
@@ -102,4 +100,4 @@ IMO there’s no perfect solution. Both approach has their pros and cons. As of 
 - [JTex](https://github.com/curvenote/jtex)
 - [Intellij TeXiFy](https://plugins.jetbrains.com/plugin/9473-texify-idea)
 - [Resumake.io](notion://www.notion.so/www.resumake.io) has limited selection of awesome templates. However, this project is not in active development. The templates are also modified in non-extensible manner. IMO, adding of new templates would be slow unless a re-architect takes place.
-- [Learn LaTeX](https://www.overleaf.com/learn/latex/How_to_write_a_LaTeX_class_file_and_design_your_own_CV_(Part_1))
+- [Learn LaTeX](<https://www.overleaf.com/learn/latex/How_to_write_a_LaTeX_class_file_and_design_your_own_CV_(Part_1)>)
