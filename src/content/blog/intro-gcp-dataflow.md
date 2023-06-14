@@ -59,7 +59,7 @@ Google’s Dataflow is a runner for Apache Beam. Apache beam is a unified and po
 
 # Overall Architecture
 
-![overall architecture](/public/blog/intro-gcp-dataflow/overall-architecture.png)
+![overall architecture](/blog/intro-gcp-dataflow/overall-architecture.png)
 
 # V2 portable runner
 
@@ -95,7 +95,7 @@ To summarize, below are the diffrent stages of manifest
 
 ## Sample execution graph (WordCount)
 
-![sample execution graph](/public/blog/intro-gcp-dataflow/sample-execution-graph.png)
+![sample execution graph](/blog/intro-gcp-dataflow/sample-execution-graph.png)
 
 # Unique services to dataflow
 
