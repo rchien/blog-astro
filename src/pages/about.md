@@ -3,34 +3,31 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+This blog is a record of my journey to a become better developer and
+entrepreneur. As a geek passionate about software development, my goal
+is to create value through software. On this journey I hope to share
+with you solutions to technical, business and as always, people
+problems.
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
+While I hope I succeed in overcoming most of the challenges, I will
+not be stingy in sharing my failures as well. This will be a journey
+of many ups and downs. Hope you enjoy the ride. Through this blog I
+hope to offer original ideas and solutions to problems encountered
+building products. Of course original problems are hard to come by so
+expect content that simply offer another perspective if not improve
+upon existing solutions. Since my ultimate goal is to build my own
+business, there will be content on project/time management, ideas, and
+everything entrepreneurship related.
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
-
-<div>
+<div class="block">
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
 </div>
 
-## Tech Stack
+Below are some facts about me you might find interesting.
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+- I graduated from [SFU](http://www.sfu.ca/) with CS degree specializing in software development and a minor in math.
+- I've worked in different types companies ranging from unsuccessful startup to publically traded multi-billion company.
+- I started out coding in Java but my favorite language is C#. However, lately I've been pulled to world of Scala thanks to all the BigData projects.
+- I find ML (Machine Learning) facinating and have complete several MOOC. Even with minor in Math. I find my math lacking especially when it comes to ML related topics such as Calculus and Linear Algebra.
 
-## Features
 
-Here are certain features of this site.
-
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
